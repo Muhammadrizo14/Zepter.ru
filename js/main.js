@@ -79,3 +79,8 @@ t.addEventListener('click', ()=> {
   pdf.style.display = 'block'
   details.style.display = 'none'
 })
+
+
+
+
+
