@@ -1,6 +1,161 @@
 * {
   padding: 0;
+  outline: none;
   margin: 0;
+}
+
+.modal-target {
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal-target:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-atransform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  cursor: pointer;
 }
 
 .container {
@@ -8,282 +163,52 @@
   margin: 0 auto;
 }
 
-.banner img {
-  max-width: 100%;
-  padding-bottom: 20px;
-}
-
-.main {
-  background: #f7f7f7;
-}
-
-.main .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 30px;
-}
-
-.main .products .filter .share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .products .filter .share p {
-  margin-left: 5px;
-}
-
-.main .products .filter .share img {
-  width: 46px;
-  height: 46px;
-}
-
-.main .products .filter .share img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.main .products .filter .selection select {
-  width: 276px;
-  height: 37px;
-  text-align: left;
-  text-transform: uppercase;
-  background: transparent;
-  color: #303030;
-  margin: 30px 0px;
-  font-weight: normal;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  font-size: 16px;
-  color: #303030;
-  border: none;
-  border-bottom: 1px solid #9b9b9b;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 5px 10px;
-  -webkit-transition: background 0.2s ease-in 0s;
-  transition: background 0.2s ease-in 0s;
-  outline: none !important;
-}
-
-.main .products .product_side {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -webkit-transition: -webkit-transform 300ms ease-out 0ms, -webkit-box-shadow 300ms ease-out 0ms;
-  transition: -webkit-transform 300ms ease-out 0ms, -webkit-box-shadow 300ms ease-out 0ms;
-  transition: transform 300ms ease-out 0ms, box-shadow 300ms ease-out 0ms;
-  transition: transform 300ms ease-out 0ms, box-shadow 300ms ease-out 0ms, -webkit-transform 300ms ease-out 0ms, -webkit-box-shadow 300ms ease-out 0ms;
-}
-
-.main .products .product_side .card {
-  max-width: 314px;
-  background-color: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-  overflow: hidden;
-}
-
-.main .products .product_side .card .mainf h3 {
-  padding: 0.5rem 0.8rem 0px;
-  text-align: initial;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: unset;
-  padding: unset;
-  border: unset;
-  background: unset;
-  font-style: unset;
-  font-variant: unset;
-  font-weight: unset;
-  font-stretch: unset;
-  line-height: unset;
-  font-family: inherit;
-  font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: inherit;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 60px;
-}
-
-.main .products .product_side .card .mainf h3 span {
-  margin: unset;
-  padding: unset;
-  border: unset;
-  background: unset;
-  font-style: unset;
-  font-variant: unset;
-  font-weight: unset;
-  font-stretch: unset;
-  line-height: unset;
-  font-family: inherit;
-  font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: inherit;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  color: #005496;
-  text-align: initial;
-}
-
-.main .products .product_side .card .mainf p {
-  font-family: "Open Sans Regular";
-  color: #c3c3c3;
-  font-size: 14px;
-  text-align: initial;
-}
-
-.main .products .product_side .card .moinf .price__f {
-  padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .products .product_side .card .moinf .price__f .pricet {
-  cursor: pointer;
-  color: #3770b0;
-  font-size: 16px;
-  margin-right: 2px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.main .products .product_side .card .moinf .price__f .bbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  left: 83px;
-}
-
-.main .products .product_side .card .moinf .price__f .bbtn .basket {
-  background-color: #000;
-  width: 42px;
-  height: 28px;
-}
-
-.main .products .product_side .card .moinf .price__f .bbtn .basket img {
-  position: relative;
-  top: 7px;
-  left: 5px;
-}
-
-.main .products .product_side .card .moinf .price__s {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .products .product_side .card .moinf .price__s .pricet {
-  cursor: pointer;
-  color: #c5a678;
-  font-size: 16px;
-  margin-right: 2px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.main .products .product_side .card .moinf .price__s .bbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  left: 83px;
-}
-
-.main .products .product_side .card .moinf .price__s .bbtn .basket {
-  background-color: #c5a678;
-  width: 42px;
-  height: 28px;
-}
-
-.main .products .product_side .card .moinf .price__s .bbtn .basket img {
-  position: relative;
-  top: 7px;
-  left: 5px;
-}
-
-.main .products .product_side .card .lz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 14px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d7d7d7 transparent transparent;
-  -o-border-image: initial;
-     border-image: initial;
-  padding: 1em;
-  background-color: white;
-  cursor: pointer;
-  -webkit-transition: background-color 0.2s ease-in-out 0s;
-  transition: background-color 0.2s ease-in-out 0s;
-}
-
-.main .products .product_side .card .lz p {
-  cursor: pointer;
-  color: #005496;
+img {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 12px;
-  text-align: left;
 }
 
-.main .products .product_side .card:hover {
-  -webkit-box-shadow: #e4e4e4 0px 0px 8px 5px;
-          box-shadow: #e4e4e4 0px 0px 8px 5px;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+a {
+  text-decoration: none;
+}
+
+.mainf {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+header .upheader {
+  background-color: #000;
+}
+
+header .upheader .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0.7rem 0px;
+}
+
+header .upheader .container ul li a {
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+header .upheader .container ul li a img {
+  width: 24px;
+  height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
