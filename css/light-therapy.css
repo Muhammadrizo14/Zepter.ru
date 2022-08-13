@@ -312,6 +312,8 @@ li {
   transition: transform 300ms ease-out 0ms, box-shadow 300ms ease-out 0ms, -webkit-transform 300ms ease-out 0ms, -webkit-box-shadow 300ms ease-out 0ms;
 }
 
+
+
 .main .products .product_side .card {
   max-width: 314px;
   background-color: #fff;
@@ -511,5 +513,213 @@ li {
           box-shadow: #e4e4e4 0px 0px 8px 5px;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+
+/*buyagi hafizdiki hoppi*/
+
+.products {
+  display: flex;
+}
+
+.card {
+  max-width: 314px;
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.card .mainf h3 {
+  padding: 0.5rem 0.8rem 0px !important;
+  text-align: initial;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 60px;
+  margin: unset;
+  padding: unset;
+  border: unset;
+  background: unset;
+  font-style: unset;
+  font-variant: unset;
+  font-weight: unset;
+  font-stretch: unset;
+  line-height: unset;
+  font-family: inherit;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.card .mainf h3 span {
+  margin: unset;
+  padding: unset;
+  border: unset;
+  background: unset;
+  font-style: unset;
+  font-variant: unset;
+  font-weight: unset;
+  font-stretch: unset;
+  line-height: unset;
+  font-family: inherit;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #005496;
+  text-align: initial;
+}
+
+.card .mainf p {
+  padding: 0.5rem 0.8rem 0px !important;
+  font-family: "Open Sans Regular";
+  color: #c3c3c3;
+  font-size: 14px;
+  text-align: initial;
+}
+
+.card .moinf .price__f {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card .moinf .price__f .pricet {
+  cursor: pointer;
+  color: #3770b0;
+  font-size: 16px;
+  margin-right: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card .moinf .price__f .bbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  left: 83px;
+}
+
+.card .moinf .price__f .bbtn .basket {
+  background-color: #000;
+  width: 42px;
+  height: 28px;
+}
+
+.card .moinf .price__f .bbtn .basket img {
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.card .moinf .price__s {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card .moinf .price__s .pricet {
+  cursor: pointer;
+  color: #c5a678;
+  font-size: 16px;
+  margin-right: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card .moinf .price__s .bbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  left: 83px;
+}
+
+.card .moinf .price__s .bbtn .basket {
+  background-color: #c5a678;
+  width: 42px;
+  height: 28px;
+}
+
+.card .moinf .price__s .bbtn .basket img {
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.card .lz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d7d7d7 transparent transparent;
+  -o-border-image: initial;
+  border-image: initial;
+  padding: 1em;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-in-out 0s;
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+.card .lz p {
+  cursor: pointer;
+  color: #005496;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  text-align: left;
+}
+
+.card .lz:hover {
+  background-color: #eaeaea;
+  border: 1px solid #d7d7d7;
+}
+
+.card:hover {
+  -webkit-box-shadow: #e4e4e4 0px 0px 8px 5px;
+  box-shadow: #e4e4e4 0px 0px 8px 5px;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 /*# sourceMappingURL=light-therapy.css.map */

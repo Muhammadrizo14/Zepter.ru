@@ -1,0 +1,116 @@
+.section_1 {
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 337px;
+}
+
+.register form{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.df_fdc {
+    display: flex;
+    flex-direction: column;
+}
+
+.register {
+    padding-top: 30px;
+}
+
+.register_form_divs {
+    width: 700px;
+}
+.register_form_divs input {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 2.7rem;
+    font-size: 16px;
+    font-family: inherit;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(201, 201, 201);
+    font-family: Cambria;
+    font-weight: 100;
+    margin-right: 30px;
+}
+.register_form_divs{
+    margin-top: 20px;
+}
+.register_form_divs label {
+    font-size: 14px;
+    font-family: Cambria;
+    font-weight: 100;
+    padding: 5px;
+}
+.register h2 {
+    font-size: 20px;
+    font-family: Cambria;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.register_form_button {
+    text-transform: uppercase;
+    margin-top: 50px;
+    width: 384px;
+    height: 56px;
+    border-radius: 0px !important;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.register_form_divs_check_out_radio {
+    padding-top: 40px;
+}
+
+.register_form_divs_check_out_radio input {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.login {
+    display: none;
+}
+
+.on_off h1{
+    text-transform: uppercase;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 0%;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 16px;
+    font-family: "Myriad Pro Regular";
+    font-weight: bold;
+    /*color: rgb(55, 112, 176);*/
+    color: black;
+    text-align: center;
+    /*border-top: 4px solid rgb(55, 112, 176);*/
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-out 0s;
+}
+
+.active_text{
+    text-transform: uppercase;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 0%;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 16px;
+    font-family: "Myriad Pro Regular";
+    font-weight: bold;
+    color: rgb(55, 112, 176) !important;
+    text-align: center;
+    border-top: 4px solid rgb(55, 112, 176);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-out 0s;
+}
