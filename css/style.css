@@ -275,6 +275,10 @@ header .upheader .container ul li a img {
   font-weight: 100;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .subheader_child_div_ul_1 {
   margin-left: 50px;
   margin-top: 10px;
