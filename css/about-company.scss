@@ -1,0 +1,46 @@
+@import 'style.scss';
+
+
+@mixin prof {
+  .infs {
+    padding-right: 15px;
+    padding-left: 15px;
+    h1 {
+      font-size: 2rem;
+      width: fit-content;
+      border-bottom: 1px solid#228FC4;
+    }
+    p {
+      margin-top: 0;
+      font-size: 18px;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      text-align: inherit;
+      span {
+        font-weight: bolder;
+      }
+    }
+    .right {
+      text-align: right;  
+    }
+  }
+  .imgside {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+main {
+  .container {
+    .profile-company {
+      display: flex;
+      padding-top: 37px;
+      @include prof()
+    }
+    .vv-company {
+      display: flex;
+      padding-top: 37px;
+      @include prof()
+    }
+  }
+}

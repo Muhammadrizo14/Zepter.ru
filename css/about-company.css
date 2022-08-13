@@ -186,4 +186,116 @@ a {
 li {
   list-style: none;
 }
-/*# sourceMappingURL=setting.css.map */
+
+header .upheader {
+  background-color: #000;
+}
+
+header .upheader .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0.7rem 0px;
+}
+
+header .upheader .container ul li a {
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+header .upheader .container ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+main .container .profile-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 37px;
+}
+
+main .container .profile-company .infs {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+main .container .profile-company .infs h1 {
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #228FC4;
+}
+
+main .container .profile-company .infs p {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: inherit;
+}
+
+main .container .profile-company .infs p span {
+  font-weight: bolder;
+}
+
+main .container .profile-company .infs .right {
+  text-align: right;
+}
+
+main .container .profile-company .imgside {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+main .container .vv-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 37px;
+}
+
+main .container .vv-company .infs {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+main .container .vv-company .infs h1 {
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #228FC4;
+}
+
+main .container .vv-company .infs p {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: inherit;
+}
+
+main .container .vv-company .infs p span {
+  font-weight: bolder;
+}
+
+main .container .vv-company .infs .right {
+  text-align: right;
+}
+
+main .container .vv-company .imgside {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/*# sourceMappingURL=about-company.css.map */
