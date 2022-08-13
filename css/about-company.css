@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  outline: none;
+  margin: 0;
+}
+
+.modal-target {
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.imgmain {
+  width: 300px;
+  height: 300px;
+}
+
+.modal-target:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 32px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-atransform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainf {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+header .upheader {
+  background-color: #000;
+}
+
+header .upheader .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0.7rem 0px;
+}
+
+header .upheader .container ul li a {
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+header .upheader .container ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+main .container .profile-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 37px;
+}
+
+main .container .profile-company .infs {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+main .container .profile-company .infs h1 {
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #228FC4;
+}
+
+main .container .profile-company .infs p {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: inherit;
+}
+
+main .container .profile-company .infs p span {
+  font-weight: bolder;
+}
+
+main .container .profile-company .infs .right {
+  text-align: right;
+}
+
+main .container .profile-company .imgside {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+main .container .vv-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 37px;
+}
+
+main .container .vv-company .infs {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+main .container .vv-company .infs h1 {
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #228FC4;
+}
+
+main .container .vv-company .infs p {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: inherit;
+}
+
+main .container .vv-company .infs p span {
+  font-weight: bolder;
+}
+
+main .container .vv-company .infs .right {
+  text-align: right;
+}
+
+main .container .vv-company .imgside {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/*# sourceMappingURL=about-company.css.map */

@@ -242,6 +242,7 @@ slider.init({
   buttons: true,
   dots: true
 });
+<<<<<<< HEAD
 // code from slider
 
 
@@ -345,3 +346,6 @@ const scrollToTop = () => {
 scrollToTop()
 // code from li popup finish
 
+=======
+// code from slider
+>>>>>>> origin/main
