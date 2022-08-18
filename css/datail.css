@@ -16,6 +16,9 @@
   width: 300px;
   height: 300px;
 }
+p{
+  color: #000;
+}
 
 .modal-target:hover {
   opacity: 0.7;
@@ -253,7 +256,7 @@ main .st .whh .ss .gb .pf {
 }
 
 main .st .whh .ss .gb .pf .fpf {
-  width: 19%;
+  width: 26%;
 }
 
 main .st .whh .ss .gb .pf .fpf .blue {
@@ -275,6 +278,13 @@ main .st .whh .ss .gb .pf .fpf .or {
   margin-right: 2px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.t__side {
+  color: #000 !important;
+}
+
+.spf {
+  color: #000 !important;
 }
 
 main .st .whh .ss .gb .pf .spf .spf1 {
